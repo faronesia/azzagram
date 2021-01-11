@@ -13,6 +13,8 @@
 .header-navigation .NavMenu ul li a{color:#333;font-size:15px;font-weight:600;text-decoration:none;}
 .header-navigation .NavMenu ul li a span{margin-left:5px;color:#f9690e;font-weight:600;font-size:13px;font-style:italic;}
 .header-navigation .NavMenu p{font-size:15px;margin:10px;color:#666666;text-align:center;}
+.header-navigation .NavMenu a{font-size:15px;font-weight:600;color:#5c6ac4;}
+.header-navigation .NavMenu a:hover{font-size:15px;font-weight:600;color:#333333;}
 .check{display:none;}
 .header-navigation label{cursor:pointer;display:block;padding:0;background-position:center;transition:all .5s linear;}
 /* LANDING */
@@ -26,6 +28,7 @@
 .head1 h3{color:#5c6ac4;font-size:20px;font-weight:500;}
 .head1 p{padding:0;margin:0;margin-bottom:10px;color:#333333;font-size:15px;font-weight:500;}
 .head1 a{margin:10px;display:inline-block;text-decoration:none;background:#ff5733;padding:10px 30px;color:#ffffff;font-size:16px;font-weight:500;border-radius:5px;cursor:pointer;}
+.head1 a:hover{color:#333333;}
 .head2{box-sizing:border-box;padding:20px}
 .head2 img{display:inline-block;width:100%;margin-left:auto;margin-right:auto;}
 @media screen and (max-width:700px){.head-section-col{flex:100%;margin:0;}.head1,.head2{padding:20px;}.head1,.head2{text-align:center;}}
