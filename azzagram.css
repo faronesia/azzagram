@@ -1,66 +1,8 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;/*font-size:100%;*/font:inherit;vertical-align:baseline;}
-/* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{line-height:1;display:block;}*{margin:0;padding:0;}html{display:block;}blockquote,q{quotes:none;}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}
-/* Blogger CSS Reset */
-.section,.widget{margin:0 0 0 0;padding:0 0 0 0;}
-.navbar,.blog-feeds,.feed-links,#backlinks-container,a.home-link,.blog-mobile-link{display:none;}
-.post-body .separator > a, .post-body .separator > span {margin-left: 0 !important;}
-.quickedit,.thread-toggle,.edit-post,.item-control{display:none;}
-/* disable font boosting on mobile browsers */
-body * {
-max-height: 9999999em; /* Chrome for Android */
--moz-text-size-adjust: none; /* Firefox Mobile */
-}
-/* FRAMEWORK */
-strong,b{font-weight:bold;}
-cite,em,i{font-style:italic;}
-a:link{color:#4db2ec;text-decoration:none;outline:none;}
-a:visited{color:#4db2ec;text-decoration:none;}
-a:hover{color:#444444;text-decoration:none;}
-a img{border:none;border-width:0;outline:none;}
-abbr,acronym{border-bottom:1px dotted;cursor:help;}
-sup,sub{vertical-align:baseline;position:relative;top:-.4em;font-size:86%;}
-sub{top:.4em;}small{font-size:86%;}
-kbd{font-size:80%;border:1px solid #777;padding:2px 5px;border-bottom-width:2px;border-radius:3px;}
-mark{background-color:#ffce00;color:black;}
-p,blockquote,pre,table,figure,hr,form,ol,ul,dl{margin:1.5em 0;}
-hr{height:1px;border:none;background-color:#666;}
-/* HEADING */
-h1{font-size:1.8rem}
-h2{font-size:1.6rem}
-h3{font-size:1.4rem}
-h4{font-size:1.2rem}
-h5{font-size:1rem}
-h6{font-size:0.9rem}
-h1,h2,h3,h4,h5,h6 {
-margin: 0 0 0.6em;
-font-weight:500;}
-/* LIST */
-ol,ul,dl{margin: .5em 0em .5em 3em}
-li{margin: .5em 0}
-dt{font-weight: 500}
-dd{margin: 0 0 .5em 2em}
-/* CLEAR */
-.clear{clear:both}
-.clear:after{visibility:hidden;display:block;font-size:0;content:" ";clear:both;height:0}
-/* BODY */
-body {margin:0;padding:0;background:#ffffff;color:#212121;font:400 14px Google Sans,sans-serif;text-align:left;}
-/* BLOG */
-#blog{box-sizing:border-box;background:#f2f2f2;max-width:1000px;margin:0 auto;padding:0;overflow:hidden}
-/* HEADER */
-#header-container{background:#f2f2f2;width:100%;height:48px}
-#header-wrapper{box-sizing:border-box;max-width:1000px;position:relative}
-.header{max-width:400px;float:left;margin-right:28px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.header h1.title,.header p.title{font-weight:500;color:#1f3a93;margin:5px 10px;text-transform:uppercase;padding:0;}
-.header .description{color:#1f3a93;margin:-10px 0 4px 0;padding:0;font-size:0.7em;display:none}
-.header a,.header a:hover{color:#1f3a93;}
-.header img{width:auto;margin:5px 10px;max-height:40px;}
 /* NAVHEADER */
 .header-navigation{float:right;position:absolute;right:10px;top:10px;padding:5px;background:#ff5733;border-radius:10px;}
-.header-navigation svg{width:20px;height:20px;vertical-align:-5px;background-repeat:no-repeat!important;content:''}
+.header-navigation svg{width:20px;height:20px;vertical-align:-5px;background-repeat:no-repeat!important;content:&#39;&#39;}
 .header-navigation svg path{fill:#ffffff;}
 .header-navigation .check:checked~.NavMenu{opacity:1;visibility:visible;top:48px;box-sizing:border-box;z-index:999;transition:all .5s ease;}
-.header-navigation .check{display:none;}
 .header-navigation .icon .open{display:block;}
 .header-navigation .icon .close{display:none;}
 .header-navigation .check:checked ~ .icon .open{display:none;}
@@ -73,6 +15,8 @@ body {margin:0;padding:0;background:#ffffff;color:#212121;font:400 14px Google S
 .header-navigation .NavMenu p{font-size:15px;margin:10px;color:#666666;text-align:center;}
 .header-navigation .NavMenu a{font-size:15px;font-weight:600;color:#5c6ac4;}
 .header-navigation .NavMenu a:hover{font-size:15px;font-weight:600;color:#333333;}
+.check{display:none;}
+.header-navigation label{cursor:pointer;display:block;padding:0;background-position:center;transition:all .5s linear;}
 /* LANDING */
 .head-section{box-sizing:border-box;width:100%;background:transparent;padding:10px;}
 .inner-width{box-sizing:border-box;max-width:1000px;background:#ffffff;border-radius:10px;overflow:hidden;padding:0;margin:0}
@@ -167,13 +111,3 @@ form.whatsapp-form{border-radius:.5rem;padding:20px;box-sizing:border-box;color:
 .highlight{position:absolute;height:50%;width:100px;top:25%;left:0;pointer-events:none;opacity:.5;}
 .datainput input:focus~.highlight,.datainput textarea:focus~.highlight{animation:inputHighlighter .3s ease;}
 .datainput input:focus~label,.datainput input:valid~label,.datainput textarea:focus~label,.datainput textarea:valid~label{top:-10px;font-size:13px;color:#ff5733;}
-/* FOOTER */
-#footer-container{background:#111;padding:10px 20px;overflow:hidden;color:#ccc;font-size:12px;text-align:center;}
-#footer-wrapper{max-width:1000px;margin:0 auto;overflow:hidden;}
-#footer-wrapper .footer-right{float:right;}
-#footer-wrapper .footer-left{float:left;}
-#footer-wrapper a{color:#ccc;margin-right:16px;line-height:18px;display:inline-block;}
-#footer-wrapper a:hover{color:#4db2ec;}
-.copyright{float:left;margin:0;}
-/* Google Font */
-@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:local('Google Sans Regular'),local(GoogleSans-Regular),url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Kwp5MKg.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:local('Google Sans Regular'),local(GoogleSans-Regular),url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Nwp5MKg.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:local('Google Sans Regular'),local(GoogleSans-Regular),url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Awp5MKg.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Google Sans';font-style:normal;font-weight:400;src:local('Google Sans Regular'),local(GoogleSans-Regular),url(//fonts.gstatic.com/s/googlesans/v5/4UaGrENHsxJlGDuGo1OIlL3Owp4.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:local('Google Sans Medium'),local(GoogleSans-Medium),url(//fonts.gstatic.com/s/googlesans/v5/4UabrENHsxJlGDuGo1OIlLU94Yt3CwZ-Pw.woff2) format('woff2');unicode-range:U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:local('Google Sans Medium'),local(GoogleSans-Medium),url(//fonts.gstatic.com/s/googlesans/v5/4UabrENHsxJlGDuGo1OIlLU94YtwCwZ-Pw.woff2) format('woff2');unicode-range:U+0370-03FF}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:local('Google Sans Medium'),local(GoogleSans-Medium),url(//fonts.gstatic.com/s/googlesans/v5/4UabrENHsxJlGDuGo1OIlLU94Yt9CwZ-Pw.woff2) format('woff2');unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Google Sans';font-style:normal;font-weight:500;src:local('Google Sans Medium'),local(GoogleSans-Medium),url(//fonts.gstatic.com/s/googlesans/v5/4UabrENHsxJlGDuGo1OIlLU94YtzCwY.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
