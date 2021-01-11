@@ -13,8 +13,6 @@
 .header-navigation .NavMenu ul li a{color:#333;font-size:15px;font-weight:600;text-decoration:none;}
 .header-navigation .NavMenu ul li a span{margin-left:5px;color:#f9690e;font-weight:600;font-size:13px;font-style:italic;}
 .header-navigation .NavMenu p{font-size:15px;margin:10px;color:#666666;text-align:center;}
-.header-navigation .NavMenu a{font-size:15px;font-weight:600;color:#5c6ac4;}
-.header-navigation .NavMenu a:hover{font-size:15px;font-weight:600;color:#333333;}
 .check{display:none;}
 .header-navigation label{cursor:pointer;display:block;padding:0;background-position:center;transition:all .5s linear;}
 /* LANDING */
